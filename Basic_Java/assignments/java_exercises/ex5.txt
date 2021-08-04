@@ -1,0 +1,9 @@
+1	Write a java program to read to create user accounts.Use a suitable collection to store username and password.The application reads username and password from the user,creates an account and gives the message only if the username is not existing ,otherwise gives an error message.
+
+2	Write an application to store Employee objects that are sorted in a suitable collection based on the salaries.
+empCode,empName,empSalary are the employee details.
+   		Write an implementation to print the details.
+3	Create a new type of container that uses a private ArrayList to hold the objects. Using a class reference, capture the type of the first object you put in it, and then allow the user to insert objects of only that type from then on.
+
+Provide for display of messages at appropriate stages in your program.		
+ 

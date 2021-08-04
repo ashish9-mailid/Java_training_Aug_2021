@@ -1,0 +1,4 @@
+Case Study.
+
+Create an application to generate an invoice after a customer makes payment.Intially customer has only one option of making payment by cash,later on there should be provision for making payment either for creditcard or by cheque.design the application that takes care of extensibility feature, without affecting the working of the client’s interface.
+

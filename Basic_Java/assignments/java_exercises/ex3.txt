@@ -1,0 +1,9 @@
+Case Study
+
+A Book circulation library decides to start cd circulation for its customers.A customer who has or takes membership for the cd can borrow books as well, but some customers opt only for books because of less membership fees.A  Database of customer details (memberCode,memberName,address,telephone,membershipType  b for book and c for cd) is maintained initially only b was valid, also a database of borrowal , details(bookcode,,memberCode,dateOfBorrowal,dateOfReturn) are maintained,dateof Borrowal will be the system date and date of return will be 15 days from date of borrowal).
+The original application had the following operations:
+1	createMember(Member newMember)  to create a new member
+2	borrow(memberCode code)  -- a book  is issued to the member based on the type of membership,relevant details are updated
+3	return(memberCode code)  - a book  is put back into library after making the transaction.
+
+Enhance the above application ,with necessary updated functionalites and write a client program to test the application.

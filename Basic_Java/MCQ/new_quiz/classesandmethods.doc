@@ -1,0 +1,96 @@
+
+/*public class Sample {
+
+	 Sample()
+	{
+		System.out.println("sample");
+	}
+	
+	public static void main(String[] args) {
+	
+		new Sample();
+}
+}*/
+
+/*public class Sample {
+
+	 void Sample()
+	{
+		System.out.println("sample");
+	}
+	
+	public static void main(String[] args) {
+	
+		new Sample();
+}*/
+
+/*public class Sample {
+
+	 Sample(String name)
+	{
+		System.out.println("sample");
+	}
+	
+	public static void main(String[] args) {
+	
+		new Sample();
+}*/
+
+
+
+/*public class Sample {
+
+	static void m1(int x){
+		x+=10;
+		System.out.println(x);
+	}
+	
+	public static void main(String[] args) {
+	int x=10;
+		m1(x);
+		System.out.println(x);
+		
+}
+}*/
+
+/*public class Sample {
+int x;
+
+	 static void m1(Sample s1){
+		s1.x+=10;
+		
+	}
+	
+	public static void main(String[] args) {
+		Sample s1=new Sample();
+		s1.x=12;
+			
+		m1(s1);
+		System.out.println(s1.x);
+		
+}
+}
+*/
+
+
+/*
+ * 
+ * public class Sample {
+int x;
+
+	 static void m1(Sample s1){
+		s1=new Sample();
+		System.out.println(s1.x);
+	}
+	
+	public static void main(String[] args) {
+		Sample s1=new Sample();
+		s1.x=12;
+			
+		m1(s1);
+		System.out.println(s1.x);
+		
+}
+}*/
+
+

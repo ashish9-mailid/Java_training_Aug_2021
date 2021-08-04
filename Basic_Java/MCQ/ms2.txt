@@ -1,0 +1,261 @@
+   External User Bulk Upload External User Bulk Upload External User Management External User Management  Group Management Group Management Group Level Access Group Level Access Topic Management Topic Management Page Level Access Page Level Access External User External User  Question Master Question Master Question Active/Inactive Question Active/Inactive Question Bulk Upload Question Bulk Upload  Schedule Master Schedule Master Reschedule Exam Reschedule Exam  Template Master Template Master Image Master Image Master  Marks Management Marks Management Question Management Question Management Paper Management Paper Management Schedule Management Schedule Management Template Management Template Management Resource Management Resource Management  Check Exam Check Exam My Scheduled Exam My Scheduled Exam  Schedule Report Schedule Report Examinee Report Examinee Report External User Report External User Report Question Report Question Report Group Access Report Group Access Report Question Bank Question Bank Score Board Score Board Periodic Exam Report Periodic Exam Report  
+ 
+        
+          
+ 
+ 
+ 
+ [ Logout ]  [ Change Password ]  
+  
+ 
+ 
+ Welcome, DHEERAJ K 
+ 
+ 
+ skipped questions 
+ 
+ Section A 
+  
+ 
+Predict the output for the following code snippet: 
+public class Tester {
+public static void main(String[] args) {
+try {
+throw new RuntimeException();
+} catch (RuntimeException e) {
+System.out.println("RuntimeException");
+} catch (ArithmeticException e) {
+System.out.println("ArithmeticException");
+} catch (Exception e) {
+System.out.println("Exception");
+}
+}
+}
+  
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+Which method registers a thread in a thread scheduler?   
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+What is the return type of setName() method of Thread class?   
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+Predict the output of the following.
+class MyThread implements Runnable {
+public void run () {
+try {
+for (int i =1 ; i>0 ; i++) {
+System.out.print ( i + "\t" ) ;
+Thread.sleep(100) ;
+}
+return ;
+} catch (InterruptedException e) {
+System.out.println ("Interrupted") ;
+}
+}
+public static void main (String [ ] args) {
+MyThread s = new MyThread() ;
+Thread t = new Thread (s) ;
+t.start() ;
+}
+}   
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+What is the result of compiling and running the following code?
+public class Tester extends Thread {
+public void run() {
+System.out.print("run");
+}
+public static void main(String[] args) {
+Tester thread = new Tester();
+new Thread(thread).start();
+new Thread(thread).start();
+}
+}
+  
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+What is the output ?
+public class Test { 
+public static void main(String[] args) { 
+Boolean b1= new Boolean("TRUE"); 
+Boolean b2= new Boolean("true"); 
+System.out.print(b1==b2); 
+System.out.println(b1.equals(b2)); 
+}} 
+  
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+Which of the following statements is/are false?   
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+Given the code.
+import java.util.Collections;
+import java.util.LinkedList;
+public class TryMe {
+public static void main(String args[]) {
+LinkedList list = new LinkedList< String >();
+list.add("BbB1");
+list.add("bBb2");
+list.add("bbB3");
+list.add("BBb4");
+Collections.sort(list);
+for (String str : list) {
+System.out.print(str + ":");
+}
+}
+}
+What is the result of compilation and execution of the code?   
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+What is the output of following 
+public class WrapTest {
+public static void main(String[] args) { 
+float f4 = -5.5f; 
+float f5 = 5.5f; 
+float f6 = -5.49f; 
+float f7 = 5.49f; 
+System.out.println("Round f4 is " + Math.round(f4)); 
+System.out.println("Round f5 is " + Math.round(f5)); 
+System.out.println("Round f6 is " + Math.round(f6)); 
+System.out.println("Round f7 is " + Math.round(f7)); 
+} 
+}
+  
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+Given the following code
+import java.io.*; 
+public class IOTest { 
+public static void main(String[] args) 
+{ 
+try{ 
+DataInputStream dis = new DataInputStream(System.in); 
+dis.read(); 
+}catch(Exception e){} 
+System.out.println("here"); 
+} 
+} 
+Which of the following statements are true? 
+  
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+
+ 
+ 
+Developed & Maintained by Business Applications Group (B.A.G.) 

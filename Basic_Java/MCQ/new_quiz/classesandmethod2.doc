@@ -1,0 +1,118 @@
+
+/*public class Number {
+private int x;
+
+	public Number()
+	{
+		//System.out.println("I am in default constructor");
+		x++;
+	}
+	
+	public static void main(String[] args) {
+		
+	Number n1=new Number();
+	Number n2=new Number();
+	Number n3=new Number();
+	
+	System.out.println(n1.x);
+	System.out.println(n2.x);
+	System.out.println(n3.x);
+	}
+}*/
+
+/*public class Number {
+private static int x;
+
+	public Number()
+	{
+		//System.out.println("I am in default constructor");
+		x++;
+	}
+	
+	public static void main(String[] args) {
+		
+	Number n1=new Number();
+	Number n2=new Number();
+	Number n3=new Number();
+	
+	System.out.println(n1.x);
+	System.out.println(n2.x);
+	System.out.println(n3.x);
+	}
+}*/
+
+/*public class Number {
+	int x;
+
+	
+	public static void main(String[] args) {
+		
+		System.out.println(x);
+	
+	}
+}
+
+*/
+
+/*public class Number {
+		
+	public static void main(String[] args) {
+		int x=1;
+		
+		System.out.println(x);
+	
+	}
+}*/
+
+public class Number
+{
+	/*public static void add(int x,int y)
+	{
+		System.out.println("int sum"+(x+y));
+	}
+	*/
+	public static double add(double f1,double f2)
+	{
+		return f1+f2;
+	}
+	
+	public static void main(String[] args) {
+		
+		int sum=(int)add(12,34);
+		
+		System.out.println(add(35.0,67.0));
+	
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

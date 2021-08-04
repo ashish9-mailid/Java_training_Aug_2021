@@ -1,0 +1,63 @@
+John is a Customer who enquires in SBI bank to open an account.
+He provides his personal details.(fullname,email,telphone,address etc)
+
+After confirmation an account is created.
+After the account is created he can avail bank services like depositAmount,withdraw,checkBalance.
+
+Analyse the above scenario.
+
+a	List out the Classes to be created
+b	Attributes and methods of these classes.
+c	Which are the objects 
+
+objects						classes
+
+1	John 					Customer  -- 									Address
+2	SBI Bank				Bank
+3	newaccount 				Account
+		
+	implementation 		Client
+
+Class Responsibilities
+
+
+Bank  --- 
+
+1.  Account createNewAccount(Customer john);
+2   boolean depositAmount(int acNo,double amount);
+3	boolean withdraw(int acNo,double amount);
+		   	
+4	double checkBalance(int acNo);
+
+
+Customer
+
+Data: custId,custName,email,address.
+
+Account
+
+Data: accountNo,customer,accType,balance,password
+
+
+
+Client  code:
+
+	Bank sbi=new Bank();
+	Address add1=new Address(...)
+
+	Customer john=new Customer(1,..,add1);
+	Account newaccount=sbi.createNewAccount(john,accountType,amount);
+
+	sbi.checkBalance(newaccount.getAccountNo());
+	.....
+	
+
+
+
+
+
+
+
+
+
+

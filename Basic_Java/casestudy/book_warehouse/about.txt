@@ -1,0 +1,12 @@
+This case study is based on an application for BookWareHouse management where there are two actors who handle this application.
+admin -- who can add a book to the warehouse.
+	  -- delete a book from the warehouse
+	  -- see all the books in the warehouse.
+
+Manager
+	-- dispatches a particular book to the stockist or some party after giving the bookid,details and qty. system date is also recorded.
+
+	-- can see the dispatch details on a particular date
+	-- can see the dispatch details between two dates.
+
+The above application is created using corejava concepts and jdbc.
