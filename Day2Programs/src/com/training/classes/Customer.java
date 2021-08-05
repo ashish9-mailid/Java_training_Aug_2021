@@ -4,8 +4,8 @@ public class Customer extends User{
 	private String email;
 	
 	
-	public Customer(String name) {
-		super(name);
+	public Customer() {
+		super();
 	}
 
 	public Customer(String name, String email) {
