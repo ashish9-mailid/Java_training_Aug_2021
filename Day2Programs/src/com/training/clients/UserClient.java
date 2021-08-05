@@ -38,7 +38,7 @@ public class UserClient {
 		System.out.println(e instanceof Employee); //true
 		System.out.println(e instanceof Customer); //false
 		
-		System.out.println(e instanceof String);
+		//System.out.println(e instanceof String);
 		
 
 	}
