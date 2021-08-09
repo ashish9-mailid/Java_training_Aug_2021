@@ -357,6 +357,143 @@ Map of username,password
 	2. keys are unique
 
 	SortedMap(I) --> TreeMap based on keys
+
+	java input/output 
+
+	1. Read from key board- Scanner
+	2. Read from file
+	
+	write to files.
+	Serialization -- 
+
+	java.io -
+
+	Reader      Writer(char)     InputStream (byte)		OutputStream (byte)
+
+	File -- File file = new File("test.txt"); // attributes
+
+		does not create a file 
+
+	FileReader  - Read from a file -- reads char by char-- does not create -- 
+				FileNotFoundException.
+
+	BufferedReader - decorator 		
+
+	FileWriter -- write(str)  -- creates a file 
+
+	Serialization -- process of breaking an object to bits and pieces before writing it to a file/network
+
+	Employee emp.. 
+
+	public class Employee implements Serializable
+
+	NotSerializableException
+
+
+	Create a class Book (isbn,title,price,stock)
+	with constructors , getters ,setters and toString()
+
+
+	Create a class BookStore that has a List<Book> 
+
+
+	class Employee implements Serializable
+	{
+	}
+
+	Serializable is a marker interface , no methods.
+
+	names -- List -- is names instanceof Serializable
+
+	emp -- oOut.writeObject(emp)
+	
+	if(emp instanceof Serializable)
+
+		// write objext to file
+	else
+		throw new NotSerializableException(..)
+
+	Transient -- prevents serialization
+
+
+	public class MyThread1 extends Thread
+	{
+
+
+	}
+
+	
+	public class Customer extends User implements Runnable
+	{
+		public void run()
+		{
+
+			//....
+	}
+
+
+	}
+
+
+	  Series  even()    odd()
+
+	Thread class  methods
+sleep(), run(), start(), CurrentThread(),getName(),setName(),getPriority(),setPriority()
+	isAlive() join()
+
+
+2. Create a class Account that has accountId and balance as attributes. Eg: 111 , 2000
+	it has 1 method withdraw(double amount) - that has statements to withdraw amount and 
+updates the balance.
+withdraw() is called by 2 threads that share the same Account.
+
+	Partner1 -- withdraw(1000)
+	Partner2  -- withdraw(500) 
+
+public class Account
+{
+	//balance accountId
+
+	....
+	public void withdraw(double amount)
+	{
+		//print request taken
+
+		//process
+
+		//sleep
+
+
+	}	
+
+}
+	synchronized method /instance method /static method
+	synchronized block
+
+		
+	Account.m1() -- object of Class called Class
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 
