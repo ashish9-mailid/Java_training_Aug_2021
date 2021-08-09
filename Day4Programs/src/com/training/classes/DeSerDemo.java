@@ -10,9 +10,11 @@ public class DeSerDemo {
 	public static void main(String[] args) {
 		
 		try {
-			ObjectInputStream oIn = new ObjectInputStream(new FileInputStream("names.ser"));
-			List<String> names = (List<String>) oIn.readObject();
-			System.out.println(names);
+			ObjectInputStream oIn = new ObjectInputStream(new FileInputStream("emp.ser"));
+			//List<String> names = (List<String>) oIn.readObject();
+			//System.out.println(names);
+			Employee emp1=(Employee) oIn.readObject();
+			System.out.println(emp1);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

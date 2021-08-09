@@ -1,8 +1,10 @@
 package com.training.classes;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable{
 	
-	private int empCode;
+	private transient int empCode;//does not participate in serialization
 	private String name;
 	private String dept;
 	
