@@ -29,14 +29,15 @@ public class MySecurityConfigurationDb extends WebSecurityConfigurerAdapter {
 		  
 		  return new PasswordEncoder()
 		  {
+	  		  @Override 
+			  public String encode(CharSequence userEntered) { 
+				   return userEntered.toString(); }
 	  
 			  @Override 
-			  public String encode(CharSequence charSequence) { 
-				  return charSequence.toString(); }
-	  
-			  @Override 
-			  public boolean matches(CharSequence charSequence, String s) {
-				  if(charSequence.equals(s))	
+			  public boolean matches(CharSequence userEntered, String password) {
+				  System.out.println("UserEntered "+userEntered);
+				  System.out.println("password"+password);
+				  if(password.equals(userEntered))	
 				  return true; 
 				  return false;
 				  	
@@ -45,6 +46,7 @@ public class MySecurityConfigurationDb extends WebSecurityConfigurerAdapter {
 	public void configure(AuthenticationManagerBuilder auth) throws Exception
 	{
 		auth.userDetailsService(userDetailsService)
+		/* calls loadUserByUsername(String username), returns the User object with other values */
 		.passwordEncoder(passwordEncoder());
 			
 		

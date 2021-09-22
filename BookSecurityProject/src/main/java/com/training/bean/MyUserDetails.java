@@ -11,10 +11,10 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 public class MyUserDetails implements UserDetails {
 
-	private User user ;
+	private MyUser user ;
 	private List<GrantedAuthority> authorities;
 	
-	public MyUserDetails(User user) {
+	public MyUserDetails(MyUser user) {
 		this.user=user;
 		this.authorities=Arrays.stream(user.getRoles().split(",")).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
                 
